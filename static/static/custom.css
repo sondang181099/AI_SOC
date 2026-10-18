@@ -1,0 +1,6 @@
+/* Ẩn nút Đọc ra loa (Read Aloud / Text-to-Speech) trên giao diện chat */
+button[id^="speak-button-"],
+button[aria-label="Read Aloud"],
+button[aria-label="Đọc ra loa"] {
+    display: none !important;
+}

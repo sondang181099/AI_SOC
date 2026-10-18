@@ -1642,31 +1642,28 @@ except Exception as e:
 if default_prompt_suggestions == []:
     default_prompt_suggestions = [
         {
-            'title': ['Help me study', 'vocabulary for a college entrance exam'],
-            'content': "Help me study vocabulary: write a sentence for me to fill in the blank, and I'll try to pick the correct option.",
+            'title': ['Phân tích cảnh báo SIEM', 'phát hiện Brute Force hoặc Anomaly'],
+            'content': 'Tôi vừa nhận được cảnh báo SIEM về nhiều thất bại đăng nhập bất thường (Brute Force). Hãy hướng dẫn các bước phân tích và xử lý sự cố (Incident Response) chi tiết.',
         },
         {
-            'title': ['Give me ideas', "for what to do with my kids' art"],
-            'content': "What are 5 creative things I could do with my kids' art? I don't want to throw them away, but it's also so much clutter.",
+            'title': ['Phân tích Log gõ lệnh', 'phát hiện kỹ thuật tấn công PowerShell/Bash'],
+            'content': 'Hãy giúp tôi phân tích đoạn log dòng lệnh này để xác định xem có phải kỹ thuật Obfuscation, Command Injection hoặc tải mã độc không:',
         },
         {
-            'title': ['Tell me a fun fact', 'about the Roman Empire'],
-            'content': 'Tell me a random fun fact about the Roman Empire',
+            'title': ['Tra cứu MITRE ATT&CK', 'gợi ý quy tắc phòng thủ'],
+            'content': 'Giải thích kỹ thuật T1059 (Command and Scripting Interpreter) trong MITRE ATT&CK và đưa ra các quy tắc phát hiện (Detection Rules) cho SOC.',
         },
         {
-            'title': ['Show me a code snippet', "of a website's sticky header"],
-            'content': "Show me a code snippet of a website's sticky header in CSS and JavaScript.",
+            'title': ['Viết quy tắc Sigma/YARA', 'phát hiện mã độc hoặc hành vi bất thường'],
+            'content': 'Viết mẫu quy tắc Sigma hoặc YARA rule để phát hiện hành vi truy cập trái phép vào bộ nhớ LSASS nhằm lấy cắp mật khẩu.',
         },
         {
-            'title': [
-                'Explain options trading',
-                "if I'm familiar with buying and selling stocks",
-            ],
-            'content': "Explain options trading in simple terms if I'm familiar with buying and selling stocks.",
+            'title': ['Quy trình ứng cứu sự cố', 'khi nghi ngờ hệ thống nhiễm Ransomware'],
+            'content': 'Nêu quy trình chuẩn (Playbook SOC) các bước cô lập, điều tra và ứng cứu sự cố khi phát hiện một máy trạm trong mạng bị nhiễm Ransomware.',
         },
         {
-            'title': ['Overcome procrastination', 'give me tips'],
-            'content': 'Could you start by asking me about instances when I procrastinate the most and then give me some suggestions to overcome it?',
+            'title': ['Phân tích File Log Web Server', 'tìm dấu vết SQL Injection / XSS'],
+            'content': 'Hướng dẫn tôi cách lọc và phân tích log Web Server (Nginx/Apache) để phát hiện các cuộc tấn công SQL Injection và Cross-Site Scripting (XSS).',
         },
     ]
 

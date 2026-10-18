@@ -1,0 +1,93 @@
+/* Ẩn nút Đọc ra loa (Read Aloud / Text-to-Speech) trên giao diện chat */
+button[id^="speak-button-"],
+button[aria-label="Read Aloud"],
+button[aria-label="Đọc ra loa"] {
+    display: none !important;
+}
+
+/* Bảo đảm hình ảnh và tệp đính kèm trong tin nhắn chat của người dùng luôn hiển thị đầy đủ */
+.user-message div.mb-1.flex,
+.chat-user div.mb-1.flex {
+    display: flex !important;
+}
+
+/* Ẩn dòng chữ Open WebUI ‧ v... và khoảng trống gợi ý trên màn hình chờ (Suggestions/ChatPlaceholder) */
+.m-auto div.mb-1.flex.gap-1.text-xs:not(:has(svg)),
+.m-auto div.mb-1.flex.gap-1.text-xs:not(:has(svg)) + div.h-36 {
+    display: none !important;
+}
+
+/* Ẩn nút chọn Model khi không phải tài khoản Admin */
+html.not-admin #model-selector-model-button,
+html.not-admin div.flex:has(> div > div > div > div > div > #model-selector-model-button),
+html.not-admin div:has(> #model-selector-model-button) {
+    display: none !important;
+}
+
+/* Style cho nút Suy luận (Reasoning Toggle Button) */
+#ai-soc-reasoning-btn {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    gap: 0.35rem !important;
+    height: 1.875rem !important;
+    padding: 0 0.65rem !important;
+    font-size: 0.8125rem !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    border-radius: 9999px !important;
+    cursor: pointer !important;
+    user-select: none !important;
+    transition: all 0.15s ease-in-out !important;
+    margin: 0 0.25rem !important;
+    align-self: center !important;
+}
+
+/* Trạng thái BẬT suy luận */
+#ai-soc-reasoning-btn.active {
+    background-color: rgba(14, 165, 233, 0.12) !important;
+    color: #0284c7 !important;
+    border: 1px solid rgba(14, 165, 233, 0.45) !important;
+}
+html.dark #ai-soc-reasoning-btn.active {
+    background-color: rgba(56, 189, 248, 0.14) !important;
+    color: #38bdf8 !important;
+    border: 1px solid rgba(56, 189, 248, 0.4) !important;
+}
+#ai-soc-reasoning-btn.active:hover {
+    background-color: rgba(14, 165, 233, 0.2) !important;
+}
+html.dark #ai-soc-reasoning-btn.active:hover {
+    background-color: rgba(56, 189, 248, 0.22) !important;
+}
+
+/* Trạng thái TẮT suy luận */
+#ai-soc-reasoning-btn.inactive {
+    background-color: transparent !important;
+    color: #9ca3af !important;
+    border: 1px solid rgba(156, 163, 175, 0.25) !important;
+}
+#ai-soc-reasoning-btn.inactive:hover {
+    color: #4b5563 !important;
+    border-color: rgba(156, 163, 175, 0.45) !important;
+    background-color: rgba(156, 163, 175, 0.08) !important;
+}
+html.dark #ai-soc-reasoning-btn.inactive {
+    color: #6b7280 !important;
+    border: 1px solid rgba(107, 114, 128, 0.25) !important;
+}
+html.dark #ai-soc-reasoning-btn.inactive:hover {
+    color: #9ca3af !important;
+    border-color: rgba(156, 163, 175, 0.4) !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+#ai-soc-reasoning-btn svg {
+    width: 0.95rem !important;
+    height: 0.95rem !important;
+    flex-shrink: 0 !important;
+    stroke-width: 2 !important;
+}
