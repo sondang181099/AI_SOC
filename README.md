@@ -1,16 +1,18 @@
-# Open WebUI 👋
+# Open WebUI (Bản Tùy Biến AI SOC) 🛡️
 
-![GitHub stars](https://img.shields.io/github/stars/open-webui/open-webui?style=social)
-![GitHub forks](https://img.shields.io/github/forks/open-webui/open-webui?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/open-webui/open-webui?style=social)
-![GitHub repo size](https://img.shields.io/github/repo-size/open-webui/open-webui)
-![GitHub language count](https://img.shields.io/github/languages/count/open-webui/open-webui)
-![GitHub top language](https://img.shields.io/github/languages/top/open-webui/open-webui)
-![GitHub last commit](https://img.shields.io/github/last-commit/open-webui/open-webui?color=red)
-[![Discord](https://img.shields.io/badge/Discord-Open_WebUI-blue?logo=discord&logoColor=white)](https://discord.gg/5rJgQTnV4s)
-[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/open-webui)
+> [!NOTE]  
+> 📖 **Xem tài liệu mô tả chi tiết bằng Tiếng Việt và thông tin các mô hình AI tại:** **[README_VI.md](./README_VI.md)**
 
 ![Open WebUI Banner](./banner.png)
+
+**Open WebUI là nền tảng AI mã nguồn mở tự lưu trữ (Self-Hosted), hoạt động hoàn toàn Offline trong mạng nội bộ.** Bản phân phối này đã được tùy biến chuyên sâu cho Trung tâm Giám sát và Điều hành An toàn Thông tin (**AI_SOC**), tích hợp:
+- Bản địa hóa 100% Tiếng Việt (`vi-VN`).
+- Bộ kịch bản và Prompt chuyên dụng phân tích SIEM, Log tấn công, MITRE ATT&CK, Sigma Rules.
+- Chế độ bật/tắt Suy luận (`[ 🧠 Suy luận ]`) trực tiếp trên thanh công cụ chat.
+- Kết nối các mô hình AI chuyên trách An toàn Thông tin (`foundation-sec-abliterated`, `gemma4`, `nomic-embed-text`) vận hành qua máy chủ suy luận cục bộ Ollama.
+
+---
+
 
 **Open WebUI is an [extensible](https://docs.openwebui.com/features/extensibility/plugin), feature-rich, and user-friendly self-hosted AI platform designed to operate entirely offline.** It supports various LLM runners like **Ollama** and **OpenAI-compatible APIs**, with **built-in inference engine** for RAG, making it a **powerful AI deployment solution**.
 
